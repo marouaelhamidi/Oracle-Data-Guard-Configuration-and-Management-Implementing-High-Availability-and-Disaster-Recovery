@@ -1,0 +1,2 @@
+# Oracle-Data-Guard-Configuration-and-Management-Implementing-High-Availability-and-Disaster-Recovery
+This project focuses on configuring Oracle Data Guard on two Windows machines (db1 and db2) using Oracle 19c. The goal is to ensure high availability, data redundancy, and disaster recovery by setting up the primary and standby databases, enabling the managed recovery process (MRP), and performing failover and switchover operations.
