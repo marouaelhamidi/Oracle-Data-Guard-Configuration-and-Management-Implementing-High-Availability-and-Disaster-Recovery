@@ -1,0 +1,82 @@
+##############################################################################
+##                                                                          ##
+##                            DBCA response file                            ##
+##                            ------------------                            ##
+## Copyright(c) Oracle Corporation 1998,2019. All rights reserved.         ##
+##                                                                          ##
+## Specify values for the variables listed below to customize               ##
+## your installation.                                         		    ##
+##                                                            		    ##
+## Each variable is associated with a comment. The comment    		    ##
+## can help to populate the variables with the appropriate   		    ##
+## values.                                                  		    ##
+##                                                               	    ##
+## IMPORTANT NOTE: This file contains plain text passwords and   	    ##
+## should be secured to have read permission only by oracle user 	    ##
+## or db administrator who owns this installation.               	    ##
+##############################################################################
+#-------------------------------------------------------------------------------
+# Do not change the following system generated value. 
+#-------------------------------------------------------------------------------
+responseFileVersion=/oracle/assistants/rspfmt_dbca_response_schema_v12.2.0
+gdbName=ora
+sid=ora
+databaseConfigType=SI
+RACOneNodeServiceName=
+policyManaged=false
+createServerPool=false
+serverPoolName=
+cardinality=
+force=false
+pqPoolName=
+pqCardinality=
+createAsContainerDatabase=false
+numberOfPDBs=0
+pdbName=
+useLocalUndoForPDBs=true
+pdbAdminPassword=
+nodelist=
+templateName=/dbi/oracle/V19Database/assistants/dbca/templates/General_Purpose.dbc
+sysPassword=password
+systemPassword=password
+serviceUserPassword=
+emConfiguration=
+emExpressPort=5500
+runCVUChecks=FALSE
+dbsnmpPassword=
+omsHost=
+omsPort=0
+emUser=
+emPassword=
+dvConfiguration=false
+dvUserName=
+dvUserPassword=
+dvAccountManagerName=
+dvAccountManagerPassword=
+olsConfiguration=false
+datafileJarLocation={ORACLE_HOME}/assistants/dbca/templates/
+datafileDestination=/dbd/oradata/ora/
+recoveryAreaDestination=
+storageType=FS
+diskGroupName=
+asmsnmpPassword=
+recoveryGroupName=
+characterSet=AL32UTF8
+nationalCharacterSet=AL16UTF16
+registerWithDirService=false
+
+dirServiceUserName=
+dirServicePassword=
+walletPassword=
+listeners=lsnrv19
+variablesFile=
+
+variables=ORACLE_BASE_HOME=/dbi/oracle/V19Database,DB_UNIQUE_NAME=ora,ORACLE_BASE=/dbi/oracle/V19BaseDatabase,PDB_NAME=,DB_NAME=ora,ORACLE_HOME=/dbi/oracle/V19Database,SID=ora
+
+initParams=undo_tablespace=UNDOTBS1,sga_target=2048MB,db_block_size=8192BYTES,nls_language=AMERICAN,dispatchers=(PROTOCOL=TCP) (SERVICE=ORAXDB),diagnostic_dest={ORACLE_BASE},control_files=("/dbd/oradata/ora/control01.ctl", "/dbd/oradata/ora/control02.ctl"),remote_login_passwordfile=EXCLUSIVE,audit_file_dest={ORACLE_BASE}/admin/ora/adump,processes=320,pga_aggregate_target=512MB,nls_territory=AMERICA,local_listener=LISTENER_ORA,open_cursors=300,compatible=19.0.0,db_name=ora,audit_trail=db
+
+sampleSchema=false
+memoryPercentage=40
+databaseType=MULTIPURPOSE
+automaticMemoryManagement=false
+totalMemory=0

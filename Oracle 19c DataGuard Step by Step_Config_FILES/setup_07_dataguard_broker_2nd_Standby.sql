@@ -1,0 +1,11 @@
+add database 'orat' as connect identifier is 'orat' maintained as physical;
+show configuration;
+edit database orat set property 'LogXptMode'='sync';
+edit database orat set property staticconnectidentifier='(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(PORT=1522)(HOST=db3))(CONNECT_DATA=(SERVICE_NAME=ora)(INSTANCE_NAME=ora)(SERVER=DEDICATED)))';
+edit database orat set property ApplyLagThreshold=0;
+edit database orat set property TransportLagThreshold=0;
+edit database orap set property FastStartFailoverTarget='oras,orat';
+edit database oras set property FastStartFailoverTarget='orap,orat';
+edit database orat set property FastStartFailoverTarget='orap,oras';
+enable configuration;
+show configuration;

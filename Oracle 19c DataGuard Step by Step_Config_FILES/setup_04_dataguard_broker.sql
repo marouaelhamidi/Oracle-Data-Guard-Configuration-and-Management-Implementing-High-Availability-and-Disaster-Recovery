@@ -1,0 +1,11 @@
+create configuration 'ora' as primary database is 'orap' connect identifier is orap;
+add database 'oras' as connect identifier is 'oras' maintained as physical;
+show configuration;
+edit database orap set property staticconnectidentifier='(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(PORT=1522)(HOST=db1))(CONNECT_DATA=(SERVICE_NAME=ora)(INSTANCE_NAME=ora)(SERVER=DEDICATED)))';
+edit database oras set property staticconnectidentifier='(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(PORT=1522)(HOST=db2))(CONNECT_DATA=(SERVICE_NAME=ora)(INSTANCE_NAME=ora)(SERVER=DEDICATED)))';
+edit database orap set property ApplyLagThreshold=0;
+edit database orap set property TransportLagThreshold=0;
+edit database oras set property ApplyLagThreshold=0;
+edit database oras set property TransportLagThreshold=0;
+enable configuration;
+show configuration;

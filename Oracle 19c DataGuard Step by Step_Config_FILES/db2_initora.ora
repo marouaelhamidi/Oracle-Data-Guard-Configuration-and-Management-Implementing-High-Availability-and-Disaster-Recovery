@@ -1,0 +1,48 @@
+ora.__data_transfer_cache_size=0
+ora.__db_cache_size=1644167168
+ora.__inmemory_ext_roarea=0
+ora.__inmemory_ext_rwarea=0
+ora.__java_pool_size=0
+ora.__large_pool_size=16777216
+ora.__oracle_base='/dbi/oracle/V19BaseDatabase'#ORACLE_BASE set from environment
+ora.__pga_aggregate_target=536870912
+ora.__sga_target=2147483648
+ora.__shared_io_pool_size=0
+ora.__shared_pool_size=469762048
+ora.__streams_pool_size=0
+ora.__unified_pga_pool_size=0
+*.audit_file_dest='/dbi/oracle/V19BaseDatabase/admin/ora/adump'
+*.audit_trail='db'
+*.compatible='19.0.0'
+*.control_files='/dbd/oradata/ora/control01.ctl','/dbd/oradata/ora/control02.ctl'#Restore Controlfile
+*.db_block_size=8192
+*.db_flashback_retention_target=60
+*.db_name='ora'
+*.db_recovery_file_dest_size=10737418240
+*.db_recovery_file_dest='/dbd/oradata/ora/fra/'
+*.db_unique_name='oras'#IS STANDBY
+*.diagnostic_dest='/dbi/oracle/V19BaseDatabase'
+*.dispatchers='(PROTOCOL=TCP) (SERVICE=oraXDB)'
+*.fal_client='oras'
+*.fal_server='orap'
+*.local_listener='db2:1522'
+*.log_archive_config='DG_CONFIG=(oras,orap)'
+*.log_archive_dest_1='LOCATION=/dbd/oradata/ora/arch1/
+VALID_FOR=(ALL_LOGFILES,ALL_ROLES)
+DB_UNIQUE_NAME=oras'
+*.log_archive_dest_2='SERVICE=orap LGWR ASYNC
+VALID_FOR=(ALL_LOGFILES,PRIMARY_ROLE)
+DB_UNIQUE_NAME=orap'
+*.log_archive_dest_state_1='ENABLE'
+*.log_archive_dest_state_2='ENABLE'
+*.log_archive_format='ora_%t_%s_%r.arc'
+*.log_archive_max_processes=30
+*.nls_language='AMERICAN'
+*.nls_territory='AMERICA'
+*.open_cursors=300
+*.pga_aggregate_target=512m
+*.processes=320
+*.remote_login_passwordfile='EXCLUSIVE'
+*.sga_target=2048m
+*.standby_file_management='AUTO'
+*.undo_tablespace='UNDOTBS1'
